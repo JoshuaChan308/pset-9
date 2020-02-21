@@ -1,5 +1,5 @@
 * {
-  background: gray;
+  background: lightgray;
 }
 
 nav ul {
@@ -32,8 +32,7 @@ nav a:hover {
 
 #current {
   float: center;
-  background: white;
-  color: black;
+  color: purple;
   font-weight: bold;
   font-family: monospace;
 }
