@@ -9,7 +9,7 @@ const message = document.querySelector("h2");
 document.getElementById("board").onclick = takeTurn;
 
 window.onload = init()
- 
+
 function init() {
   board = ["", "", "", "", "", "", "", "",
            "", "", "", "", "", "", "", "",
