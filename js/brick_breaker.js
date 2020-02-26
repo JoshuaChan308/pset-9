@@ -1,0 +1,2 @@
+let board;
+let win;
