@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet" />
-    <link href="css/styles_tic_tac_toe.css" rel="stylesheet" type="text/css" />
-    <script defer src="js/tic_tac_toe.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>APCSP Tic-Tac-Toe</title>
-  </head>
-  <body>
-    <h1>Tic | Tac | Toe</h1>
-    <center>
-        </center>
-        <div>
-        <nav>
-          <center>
-          <li> <a href="index.html">Home</a></li>
-          <li id="current"> Tic Tac Toe </li>
-          <li> <a href="brick_breaker.html">Brick Breaker</a> </li>
-          <li> <a href="checkers.html">Checkers</a> </li>
-          </center>
-        </nav>
-        </div>
-    <table id = "table">
-      <tr>
-        <th class = "wins">X Wins</th>
-        <th class = "wins"># of ties</th>
-        <th class = "wins">O Wins</th>
-      </tr>
-      <tr>
-        <td id="x_score">0</td>
-        <td id="tie_score">0</td>
-        <td id="o_score">0</td>
-      </tr>
-    </table>
-    <div class="container column">
-      <h2>Turn: X</h2>
-      <div class="container wrap" id="board">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-      </div>
+  <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet" />
+  <link href="css/styles_tic_tac_toe.css" rel="stylesheet" type="text/css" />
+  <script defer src="js/tic_tac_toe.js"></script>
+
+  <title>APCSP Tic-Tac-Toe</title>
+</head>
+
+<body>
+  <h1>Tic | Tac | Toe</h1>
+  <center>
+  </center>
+  <div>
+    <nav>
+      <center>
+        <li> <a href="index.html">Home</a></li>
+        <li id="current"> Tic Tac Toe </li>
+        <li> <a href="brick_breaker.html">Brick Breaker</a> </li>
+        <li> <a href="checkers.html">Checkers</a> </li>
+      </center>
+    </nav>
+  </div>
+  <table id="table">
+    <tr>
+      <th class="wins">X Wins</th>
+      <th class="wins"># of ties</th>
+      <th class="wins">O Wins</th>
+    </tr>
+    <tr>
+      <td id="x_score">0</td>
+      <td id="tie_score">0</td>
+      <td id="o_score">0</td>
+    </tr>
+  </table>
+  <div class="container column">
+    <h2>Turn: X</h2>
+    <div class="container wrap" id="board">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
     <div id="reset-scoreboard">Reset Scoreboard</div>
     <div id="reset-button">Play Again!</div>
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>
