@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <link href="css/styles_connect_four.css" rel="stylesheet" type="text/css" />
+  <script defer src="js/connect_four.js"></script>
+
+  <title>Connect-Four</title>
+</head>
+
+<body>
+  <center>
+    <h1>Connect-Four</h1>
+  </center>
+  <div>
+    <nav>
+      <center>
+        <li> <a href="index.html">Home</a></li>
+        <li> <a href="tic_tac_toe.html">Tic-Tac-Toe </a></li>
+        <li> <a href="brick_breaker.html">Brick Breaker</a> </li>
+        <li id="current"> Connect-Four </li>
+      </center>
+    </nav>
+  </div>
+
+  <table id="table">
+    <tr>
+      <th class="wins">X Wins</th>
+      <th class="wins"># of ties</th>
+      <th class="wins">O Wins</th>
+    </tr>
+    <tr>
+      <td id="x_score">0</td>
+      <td id="tie_score">0</td>
+      <td id="o_score">0</td>
+    </tr>
+  </table>
+
+  <div class="container column">
+
+       <h2> Turn: X </h2>
+
+       <div class="container wrap" id="board">
+
+         <div class="square small-container">
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+         </div>
+
+         <div class="square small-container">
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+         </div>
+
+         <div class="square small-container">
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+         </div>
+
+         <div class="square small-container">
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+         </div>
+
+         <div class="square small-container">
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+         </div>
+
+         <div class="square small-container">
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+         </div>
+
+         <div class="square small-container">
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+         </div>
+
+         <div class="square small-container">
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+         </div>
+
+         <div class="square small-container">
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+           <div class="small-square"></div>
+         </div>
+       </div>
+       <div id="reset-button">Play Again!</div>
+     </div>
+   </body>
+
+ </html>
