@@ -18,6 +18,7 @@ var canvas = document.getElementById("canvas_for_game");
 	var speed = 10;
 	var x = canvas.width/2;
 	var y = canvas.height-30;
+	var lives = 3
 	var dx = 2;
 	var dy = -2;
 	var px = 7;
@@ -32,8 +33,7 @@ var canvas = document.getElementById("canvas_for_game");
 	}
 
 	var score = 0;
-	var scoreFont = "18px Georgia";
-	var scoreFillStyle = "black";
+
 
 	document.addEventListener("keydown", keyDownHandler, false);
 	document.addEventListener("keyup", keyUpHandler, false);
@@ -112,10 +112,17 @@ var canvas = document.getElementById("canvas_for_game");
 	}
 
 	function drawScore() {
-		ctx.font = scoreFont;
-		ctx.fillStyle = scoreFillStyle;
+		ctx.font = "22px Georgia";
+		ctx.fillStyle = "Black";
 		ctx.fillText("Bricks Broken: "+score, 338, 20);
 	}
+
+	function drawLives() {
+  ctx.font = "22px Lato";
+  ctx.fillStyle = "black";
+  ctx.fillText("Lives: "+lives, 638, 23);
+}
+
 
 	function draw() {
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -125,6 +132,7 @@ var canvas = document.getElementById("canvas_for_game");
 		drawPaddle();
 		collisionDetection();
 		drawScore();
+		drawLives();
 
 		x += dx;
 		y += dy;
@@ -140,9 +148,21 @@ var canvas = document.getElementById("canvas_for_game");
 				dy = -dy;
 			}
 			else {
-				document.location.reload();
+				{
+				    lives--;
+				 if(!lives) {
+				        alert("Game Over. Try Again!");
+				        document.location.reload();
+				      } else {
+				        x = canvas.width/2;
+				        y = canvas.height-30;
+				        dx = 3;
+				        dy = -3;
+				        paddleX = (canvas.width-paddleWidth)/2;
+				      }
 			}
 		}
+	}
 
 		if(rightPressed && paddleX < canvas.width-paddleWidth) {
 			paddleX += px;

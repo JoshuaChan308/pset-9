@@ -1,21 +1,14 @@
-let board;
-let turn;
-let win;
-let x_wins = 0
-let o_wins = 0
-let determine_first_player;
 
-const message = document.querySelector("h2");
-document.getElementById("board").onclick = takeTurn;
 
-window.onload = init()
+  let board;
+  let turn;
+  let win;
+  let determine_first_player;
+  let x_wins = 0;
+  let o_wins = 0;
+  let ties= 0
 
-function init() {
-  board = ["", "", "", "", "", "", "", "",
-           "", "", "", "", "", "", "", "",
-           "", "", "", "", "", "", "", "",
-           "", "", "", "", "", "", "", "",
-           "", "", "", "", "", "", "", "",
-           "", "", "", "", "", "", "", "",
-           "", "", "", "", "", "", "", "",
-           "", "", "", "", "", "", "", "",]
+
+  window.onload = init;
+  document.getElementById("board").onclick = takeTurn;
+  document.getElementById("reset-button").onclick = init;
